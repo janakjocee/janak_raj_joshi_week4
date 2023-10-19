@@ -1,0 +1,159 @@
+import time
+
+def main():
+    print("Programmed by janak joshi")
+    print("Welcome to the Epic Adventure Game!")
+    print("You find yourself in a vast and enigmatic world filled with endless possibilities.")
+    input("Press Enter to embark on your epic journey...")
+
+    while True:
+        play_game()
+
+        restart = input("Do you want to play again? (yes/no): ").lower()
+        if restart != 'yes':
+            break
+
+def play_game():
+    print("\nYou stand at a crossroads. Which path will you choose?")
+    print("1. Take the left path.")
+    print("2. Take the right path.")
+    choice = input("Enter your choice (1/2):")
+
+    if choice == '1':
+        left_path()
+    elif choice == '2':
+        right_path()
+    else:
+        print("Invalid input. Please choose 1 or 2.")
+        play_game()
+
+def left_path():
+    print("\nYou chose the left path.")
+    print("You enter a dense, enchanted forest.")
+    input("Press Enter to continue...")
+    print("As you venture deeper, you encounter a hidden village of magical creatures.")
+    input("Press Enter to continue...")
+    print("They invite you to stay and learn their ways.")
+    input("Press Enter to continue...")
+    print("What will you do?")
+    
+    while True:
+        print("\n1. Accept their invitation and become part of their magical world.")
+        print("2. Politely decline and continue your journey.")
+        choice = input("Enter your choice (1/2): ")
+
+        if choice == '1':
+            learn_magic()
+            break
+        elif choice == '2':
+            print("You thank the magical creatures and continue your adventure.")
+            continue_journey()
+            break
+        else:
+            print("Invalid input. Please choose 1 or 2.")
+
+def learn_magic():
+    print("\nYou accept the magical creatures' invitation.")
+    input("Press Enter to continue...")
+    print("You spend years in their village, mastering the arts of magic and unlocking your potential.")
+    input("Press Enter to continue...")
+    print("With newfound powers, you face a choice.")
+    
+    while True:
+        print("\n1. Use your powers for good, helping those in need.")
+        print("2. Use your powers to amass wealth and power for yourself.")
+        choice = input("Enter your choice (1/2): ")
+
+        if choice == '1':
+            print("You become a renowned wizard, known for your benevolence and wisdom.")
+            input("Press Enter to continue...")
+            continue_journey()
+            break
+        elif choice == '2':
+            print("You become a feared sorcerer, using your powers to control and dominate.")
+            input("Press Enter to continue...")
+            continue_journey()
+            break
+        else:
+            print("Invalid input. Please choose 1 or 2.")
+
+def continue_journey():
+    print("Your adventure continues...")
+    input("Press Enter to continue...")
+    print("You embark on numerous quests, face formidable foes, and explore uncharted territories.")
+    input("Press Enter to continue...")
+    print("As time passes, you face another choice.")
+    
+    while True:
+        print("\n1. Seek the ultimate treasure you were originally searching for.")
+        print("2. Pursue a new and unexpected adventure.")
+        choice = input("Enter your choice (1/2): ")
+
+        if choice == '1':
+            print("You embark on a quest to find the ultimate treasure.")
+            input("Press Enter to continue...")
+            find_treasure()
+            break
+        elif choice == '2':
+            print("You decide to explore a new and unexpected adventure.")
+            input("Press Enter to continue...")
+            continue_unexpected_adventure()
+            break
+        else:
+            print("Invalid input. Please choose 1 or 2.")
+
+def find_treasure():
+    print("You journey to distant lands, face dangerous challenges, and eventually find the ultimate treasure.")
+    input("Press Enter to continue...")
+    print("Congratulations, you've completed your epic adventure!")
+    input("Press Enter to continue...")
+
+def continue_unexpected_adventure():
+    print("Your new adventure leads you to a series of unexpected and exciting quests.")
+    input("Press Enter to continue...")
+    print("You encounter and befriend powerful allies who aid you in your epic journey.")
+    input("Press Enter to continue...")
+    print("Your adventure continues with new surprises and challenges.")
+    input("Press Enter to continue...")
+    print("Finally, you find a different kind of treasure, bringing your adventure to a close.")
+    input("Press Enter to continue...")
+    print("Congratulations, you've successfully completed your epic adventure!")
+
+def right_path():
+    print("\nYou chose the right path.")
+    print("You arrive at a grand castle with a towering drawbridge.")
+    input("Press Enter to continue...")
+    print("A kind-hearted princess greets you and offers to assist you in your quest.")
+    input("Press Enter to continue...")
+    print("She tells you about a legendary treasure hidden deep within the castle's dungeons.")
+    input("Press Enter to continue...")
+    print("What will you do?")
+    
+    while True:
+        print("\n1. Accept the princess's offer and explore the dungeons together.")
+        print("2. Decline and continue your quest independently.")
+        choice = input("Enter your choice (1/2): ")
+
+        if choice == '1':
+            explore_dungeons()
+            break
+        elif choice == '2':
+            print("You thank the princess but decide to continue your adventure alone.")
+            continue_journey()
+            break
+        else:
+            print("Invalid input. Please choose 1 or 2.")
+
+def explore_dungeons():
+    print("\nYou agree to explore the castle's dungeons with the princess.")
+    input("Press Enter to continue...")
+    print("The dungeons are filled with elaborate traps, intricate puzzles, and formidable challenges.")
+    input("Press Enter to continue...")
+    print("After a long and perilous journey, you discover the legendary treasure.")
+    input("Press Enter to continue...")
+    print("The princess offers to join you on your quest as a trusted companion.")
+    input("Press Enter to continue...")
+    continue_journey()
+
+if __name__ == "__main__":
+    main()
